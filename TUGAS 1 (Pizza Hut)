@@ -62,3 +62,35 @@ else :
 print("Maaf varian yang dipilih tidak tersedia")
 
 #Pelanggan memilih tambahan cheese
+print("""
+      Tambah Extra Cheese?
+    Yes
+    No
+""")
+extracheese2 = input("Pilih Yes/No: ").lower()
+if extracheese2 == "yes":
+
+    print("""
+        ========Extra Cheese========
+        
+        Personal
+        Reguler
+        Large
+    """)
+
+    extraCheese = input("Extra Cheese : ").lower()
+    if extraCheese == "personal" :
+        hargaextraCheese = 13636
+    elif extraCheese == "reguler" :
+        hargaextraCheese = 16364
+    elif extraCheese == "large" :
+        hargaextraCheese = 19091
+    else :
+        hargaextraCheese = 0
+else:
+    hargaextraCheese = 0
+    print("Baiklah, lanjut")
+
+# Total harga pesanan pelanggan
+totalhargaPizza = hargaPizza+ hargaCrust+ hargasize+ hargaextraCheese
+print(f"Total harga pizza: Rp{totalhargaPizza} ")
