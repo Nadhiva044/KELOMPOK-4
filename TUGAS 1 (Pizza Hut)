@@ -94,3 +94,5 @@ else:
 # Total harga pesanan pelanggan
 totalhargaPizza = hargaPizza+ hargaCrust+ hargasize+ hargaextraCheese
 print(f"Total harga pizza: Rp{totalhargaPizza} ")
+
+print("Thank you for choosing PizzaHut Deliveries")
