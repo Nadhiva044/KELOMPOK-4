@@ -1,0 +1,32 @@
+print("Welcome to Deliveries PizzaHut!")
+#Pseudocode
+#Pelanggan memilih menu Pizza
+print("""
+========Menu Pizza========
+      
+    Frankfurter BBQ
+    Meat Monsta
+    Super Supreme
+    Super Supreme Chicken
+""")
+MenuPizza = input("Pilih menu Pizza : ")
+MenuPizza = MenuPizza.lower()
+if MenuPizza in ["frankfurter bbq", "meat monsta", "super supreme", "super supreme chicken"] :
+    hargaPizza = 43637
+else:
+     hargaPizza = 0
+     print("Maaf varian yang dipilih tidak tersedia")
+
+#Pelanggan memilih Crust Pizza
+print("""
+    ========crust========
+      
+    Pan
+    StuffedCrust Cheese
+    StuffedCrust Sausage
+    Cheesy Bites
+    Crown crust
+""")
+varianCrust = input("Pilih Crust Pizza : ").lower()
+if varianCrust == "pan": 
+     hargaCrust = 0
