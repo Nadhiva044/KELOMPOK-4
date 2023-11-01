@@ -1,8 +1,8 @@
-print("Welcome to Deliveries PizzaHut!")
+print("Welcome to PizzaHut Deliveries")
 #Pseudocode
 #Pelanggan memilih menu Pizza
 print("""
-========Menu Pizza========
+    ========Menu Pizza========
       
     Frankfurter BBQ
     Meat Monsta
