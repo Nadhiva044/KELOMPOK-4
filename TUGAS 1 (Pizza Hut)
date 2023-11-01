@@ -30,3 +30,35 @@ print("""
 varianCrust = input("Pilih Crust Pizza : ").lower()
 if varianCrust == "pan": 
      hargaCrust = 0
+elif varianCrust == "stuffedcrust cheese":
+     hargaCrust = 11818
+elif varianCrust == "stuffedcrust sausage":
+     hargaCrust = 9091
+elif varianCrust == "cheesy bites":
+     hargaCrust = 13636
+elif varianCrust == "crown bites":
+     hargaCrust = 11818
+else :
+     hargaCrust = 0 
+     print("Maaf varian yang dipilih tidak tersedia")
+
+#Pelanggan memilih Size Pizza
+print("""
+    ========Size========
+      
+    Personal
+    Reguler
+    Large
+""")
+variansize = input("Pilih Size Pizza : ").lower()
+if variansize == "personal":
+     hargasize = 0
+elif variansize == "reguler":
+     hargasize = 57273
+elif variansize == "large":
+     hargasize = 89091
+else :
+     hargasize = 0
+print("Maaf varian yang dipilih tidak tersedia")
+
+#Pelanggan memilih tambahan cheese
