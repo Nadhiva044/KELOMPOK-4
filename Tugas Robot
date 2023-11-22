@@ -17,6 +17,8 @@ def lewat_gawang():
 while (not at_goal()):
     lewat_gawang()
 
+
+
 hurdle 2
 def turn_right():
   turn_left()
@@ -35,3 +37,25 @@ def lewat_gawang():
 
 while(not at_goal()):
   lewat_gawang()
+
+
+Hurdle 3
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def lewat_gawang():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+    
+while (not at_goal()):
+    if wall_in_front():
+        lewat_gawang()
+    elif front_is_clear():
+        move()
