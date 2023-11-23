@@ -89,20 +89,21 @@ while at_goal()==False:
 
 
 Maze
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
-   
-right_move_count =0    
+def hadap_kanan():
+turn_left()
+turn_left()
+turn_left()
+
+def putar_balik():
+turn_left()
+turn_left()
+
 while not at_goal():
-    
-    if right_is_clear() and right_move_count :
-        turn_right()
-        move()
-        right_move count +=1
-    elif front_is_clear():
-        move()
-    else:
-        turn_left()
-        right_move_count = 0
+   if front_is_clear():
+      move()
+   elif right_is_clear():
+      hadap_kanan()
+   elif wall_in_front():
+      turn_left()
+      if wall_in_front():
+          putar_balik()
