@@ -90,13 +90,13 @@ while at_goal()==False:
 
 Maze
 def hadap_kanan():
-turn_left()
-turn_left()
-turn_left()
+    turn_left()
+    turn_left()
+    turn_left()
 
 def putar_balik():
-turn_left()
-turn_left()
+    turn_left()
+    turn_left()
 
 while not at_goal():
    if front_is_clear():
